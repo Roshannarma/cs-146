@@ -19,18 +19,16 @@ text-align: center;
   position: relative;
 }
 .container {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 50px;
+  padding-top: 50px;
   position: relative;
   text-align: center;
   color: black;
   width: 400px;
   height: 200px;
   border: 1px solid #c3c3c3;
-  float:left;
-
 }
 
 .centered {
@@ -39,8 +37,10 @@ text-align: center;
   font-size: 30px;
 }
 .total{
-  width:1800px;
-  height:800px;
-  justify-content: flex-end;
+  width:"100%";
   border: 3px solid #c3c3c3;
+  flex-direction:row;
+  justify-content: space-around;
+  display: inline-flex;
+  flex-flow: row wrap;
 }
