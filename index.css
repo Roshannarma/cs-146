@@ -21,8 +21,8 @@ text-align: center;
 .container {
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  padding-bottom: 6%;
+  padding-top: 1%;
   position: relative;
   text-align: center;
   color: black;
@@ -35,7 +35,7 @@ text-align: center;
 
 .centered {
   position: relative;
-  top: -140%;
+  padding-bottom: 5%;
   font-size: 30px;
 }
 .total{
