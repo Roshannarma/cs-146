@@ -1,5 +1,22 @@
 table, th, td {
   border: 1px solid black;
+	min-width:35px;
+}
+table{
+	width: 80%;
+
+}
+th{
+	background-color:#FFFFFF;
+}
+tr{
+	background-color:#00FF00
+}
+td.label{
+	background-color:#FFFFFF;
+}
+tr.label{
+	background-color:#FFFFFF;
 }
 .taken {
 background-color: #D72600;
