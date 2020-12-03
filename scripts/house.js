@@ -9,6 +9,7 @@
 
 			var washer = $("#washers").val();
 			var time = $("#times").val();
+			var ID = $("input").val();
 			if (washer == "none" || time == "none"){
 				alert("No valid time or washer selected.")
 				return;
@@ -19,7 +20,9 @@
 				alert("Washer is already taken.")	
 				return;
 			}
+			selection.addClass("taken");
 			selection.css('background-color','Cornflowerblue');	
+			selection.text(ID);
 			alert("Washer successfuly reserved.");
 			return;
 		}

@@ -5,6 +5,10 @@
 </head>
 <body>
 
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+
+    <script src= "scripts/house.js"> </script>
+
 <h1>River Terrace Apartments Reservation Schedule</h1>
 
 <table>
@@ -27,7 +31,7 @@
     <th>10pm</th>
     <th>11pm</th>
   </tr>
-  <tr>
+  <tr id = "W-A">
     <td class = "label">W-A</td>
     <td></td>
     <td></td>
@@ -46,7 +50,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr id = "W-B">
     <td class = "label">W-B</td>
     <td></td>
     <td></td>
@@ -65,7 +69,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr id = "W-C">
     <td class = "label">W-C</td>
     <td></td>
     <td></td>
@@ -84,7 +88,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr id = "D-A">
     <td class = "label">D-A</td>
     <td></td>
     <td></td>
@@ -103,7 +107,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr id = "D-B">
     <td class = "label">D-B</td>
     <td></td>
     <td></td>
@@ -122,7 +126,7 @@
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr id = "D-C">
     <td class = "label">D-C</td>
     <td></td>
     <td></td>
@@ -155,37 +159,45 @@
 </form>
 <br>
 <div class="dropdown">
-  <button class="dropbtn">Choose a machine</button>
+  <select class="dropbtn" id = "washers">
   <div class="dropdown-content">
-    <a href="#">W-A</a>
-    <a href="#">W-B</a>
-    <a href="#">W-C</a>
-    <a href="#">D-A</a>
-    <a href="#">D-B</a>
-    <a href="#">D-C</a>
+    <option value="none">Choose a machine</option>
+    <option value = "W-A">W-A</option>
+    <option value = "W-B">W-B</option>
+    <option value = "W-C">W-C</option>
+    <option value = "D-A">D-A</option>
+    <option value = "D-B">D-B</option>
+    <option value = "D-C">D-C</option>
   </div>
+</select>
 </div>
 <div class="dropdown">
-  <button class="dropbtn">Choose a time</button>
+  <select class="dropbtn" id="times">
   <div class="dropdown-content">
-    <a href="#">9am-10am</a>
-    <a href="#">10am-11am</a>
-    <a href="#">11am-12pm</a>
-    <a href="#">12pm-1pm</a>
-    <a href="#">1pm-2pm</a>
-    <a href="#">2pm-3pm</a>
-    <a href="#">3pm-4pm</a>
-    <a href="#">4pm-5pm</a>
-    <a href="#">5pm-6pm</a>
-    <a href="#">6pm-7pm</a>
-    <a href="#">7pm-8pm</a>
-    <a href="#">8pm-9pm</a>
-    <a href="#">9pm-10pm</a>
-    <a href="#">10pm-11pm</a>
+    <option value="none">Choose a time</option>
+    <option value="1">8am-9am</option>
+    <option value="2">9am-10am</option>
+    <option value="3">10am-11am</option>
+    <option value="4">11am-12pm</option>
+    <option value="5">12pm-1pm</option>
+    <option value="6">1pm-2pm</option>
+    <option value="7">2pm-3pm</option>
+    <option value="8">3pm-4pm</option>
+    <option value="9">4pm-5pm</option>
+    <option value="10">5pm-6pm</option>
+    <option value="11">6pm-7pm</option>
+    <option value="12">7pm-8pm</option>
+    <option value="13">8pm-9pm</option>
+    <option value="14">9pm-10pm</option>
+    <option value="15">10pm-11pm</option>
+    <option value="16">11-12pm</option>
   </div>
+</select>
 </div>
 <br>
-<br><a href="https://www.youtube.com/">SUBMIT RESERVATION</a>
+<br>
+<button id = "submitbtn" class="dropbtn" onclick="reserve()">Submit Reservation</button>
 
+<br>
 </body>
 </html>
