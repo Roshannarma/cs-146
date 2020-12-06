@@ -21,7 +21,7 @@
 				return;
 			}
 			selection.addClass("taken");
-			selection.css('background-color','Cornflowerblue');	
+			selection.css('background-color','#D72600');	
 			selection.text(ID);
 			alert("Washer successfuly reserved.");
 			return;
