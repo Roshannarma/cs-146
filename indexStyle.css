@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  background-color: #ADADAD;
+  color: #B81D0F;
+}
+
+h3 {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.houses{
+  width:100%;
+  padding-left: 20px;
+  position: relative;
+  position: relative;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 6%;
+  padding-top: 1%;
+  position: relative;
+  text-align: center;
+  color: black;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #c3c3c3;
+  float:left;
+
+}
+
+.centered {
+  position: relative;
+  padding-bottom: 5%;
+  font-size: 30px;
+}
+
+.total{
+  width:1800px;
+  height:800px;
+  justify-content: flex-end;
+  border: 3px solid #c3c3c3;
+}
