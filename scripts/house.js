@@ -1,10 +1,10 @@
 //Test code to check if Javascript is working
 		//Reminder to Ctrl+Shift+I -> Console for debug
-
+/*
 		jQuery(document).ready(function($) {
 			alert("Select a machine and an available time slot");
 		});
-
+*/
 		function reserve(){
 
 			var washer = $("#washers").val();
