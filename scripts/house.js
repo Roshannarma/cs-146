@@ -11,13 +11,17 @@
 			var time = $("#times").val();
 			var ID = $("input").val();
 			if (washer == "none" || time == "none"){
-				alert("No valid time or washer selected.")
+				alert("No valid time or washer selected.");
+				return;
+			}
+			if(ID == " " || ID == ""){
+				alert("Did not Recieve a CWID");
 				return;
 			}
 			var select_washer = $("#"+washer);
 			var selection = select_washer.find("td:eq("+time+")");
 			if (selection.hasClass("taken")){
-				alert("Washer is already taken.")
+				alert("Washer is already taken.");
 				return;
 			}
 			selection.addClass("taken");
