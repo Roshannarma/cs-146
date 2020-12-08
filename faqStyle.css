@@ -4,8 +4,14 @@ h1 {
     font-size: 40px;
     text-align: center;
 }
-
+body{
+	background-color:silver;
+}
 h2 {
     font-size: 22px;
     text-align: center;
+}
+img{
+	max-height:150px;
+	max-width:150px;
 }
