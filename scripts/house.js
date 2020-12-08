@@ -30,7 +30,7 @@
 			var now = new Date();
 			var now_time = now.getTime();
 			var my_hours = now.getHours();
-			if(now.getHours() > Number(time)+7){
+			if(now.getHours() >= Number(time)+7){
 				var countDownDate = new Date(86400000 + now_time);
 			}
 			else{
