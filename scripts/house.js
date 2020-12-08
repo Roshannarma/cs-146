@@ -2,7 +2,7 @@
 		//Reminder to Ctrl+Shift+I -> Console for debug
 
 		jQuery(document).ready(function($) {
-			alert("js is working");
+			alert("Select a machine and an available time slot");
 		});
 
 		function reserve(){
